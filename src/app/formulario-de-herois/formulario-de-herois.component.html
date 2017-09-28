@@ -8,5 +8,9 @@
         <label for="pessoa">Pessoa:</label>
         <input type="text" class="form-control" id="pessoa" name="pessoa" [(ngModel)]="novo.pessoa" required>
     </div>
+    <div class="form-group">
+        <label for="urlImagem">Url da Imagem:</label>
+        <input type="text" class="form-control" id="urlImagem" name="urlImagem" [(ngModel)]="novo.urlImagem">
+    </div>
     <button type="submit" class="btn btn-primary" [disabled]="!formCadastro.valid">Salvar</button>
 </form>
